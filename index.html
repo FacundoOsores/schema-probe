@@ -2,48 +2,55 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Structured Data Placement Probe</title>
-<meta name="description" content="A controlled test page for structured data placement.">
+<title>Northgate Branch Library</title>
+<meta name="description" content="Opening hours and services at the Northgate Branch Library.">
 
-<!-- PROBE 1: JSON-LD in HEAD. Token appears nowhere else in the document. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Structured Data Placement Probe",
-  "identifier": "HEADMARK-QX7M2R4V"
+  "name": "Northgate Branch Library",
+  "identifier": "W2TM-2AYYLN",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "14 Northgate Row",
+    "addressLocality": "Leeds"
+  }
 }
 </script>
 </head>
 <body>
 
-<h1>Structured Data Placement Probe</h1>
+<h1>Northgate Branch Library</h1>
 
 <p>
-  This page exists to determine whether a given crawler or assistant reads
-  JSON-LD structured data placed in the document body, or only in the head.
+  The Northgate branch is open Monday to Friday from 9am to 6pm, and on
+  Saturday from 10am to 4pm. The branch is closed on Sundays and on public
+  holidays.
 </p>
 
 <p>
-  Control token, present in the visible text of this page:
-  VISIBLEMARK-LP3D6H1S
+  Borrowing is free for all residents. Members may hold up to twelve items at
+  a time, with a standard loan period of three weeks. Renewals can be made in
+  person or by telephone.
 </p>
 
 <p>
-  The page carries three distinct tokens, each appearing exactly once:
-  one in the visible text above, one inside a JSON-LD block in the
-  <code>head</code>, and one inside a JSON-LD block in the <code>body</code>.
-  No token appears anywhere else in the source.
+  The reading room on the first floor seats forty and is available without
+  booking. The two study rooms at the rear may be reserved up to a fortnight
+  in advance.
 </p>
 
-<!-- PROBE 2: JSON-LD in BODY. Token appears nowhere else in the document. -->
+<p>Branch reference: 7RV0-O4E18M</p>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Structured Data Placement Probe",
-  "identifier": "BODYMARK-ZN9K5T8W",
-  "author": { "@type": "Organization", "name": "Structured Data Placement Probe" }
+  "headline": "Opening hours at the Northgate Branch Library",
+  "identifier": "BKUG-58GMZO",
+  "author": { "@type": "Organization", "name": "Northgate Branch Library" },
+  "datePublished": "2026-04-02"
 }
 </script>
 
