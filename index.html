@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Structured Data Placement Probe</title>
+<meta name="description" content="A controlled test page for structured data placement.">
+
+<!-- PROBE 1: JSON-LD in HEAD. Token appears nowhere else in the document. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Structured Data Placement Probe",
+  "identifier": "HEADMARK-QX7M2R4V"
+}
+</script>
+</head>
+<body>
+
+<h1>Structured Data Placement Probe</h1>
+
+<p>
+  This page exists to determine whether a given crawler or assistant reads
+  JSON-LD structured data placed in the document body, or only in the head.
+</p>
+
+<p>
+  Control token, present in the visible text of this page:
+  VISIBLEMARK-LP3D6H1S
+</p>
+
+<p>
+  The page carries three distinct tokens, each appearing exactly once:
+  one in the visible text above, one inside a JSON-LD block in the
+  <code>head</code>, and one inside a JSON-LD block in the <code>body</code>.
+  No token appears anywhere else in the source.
+</p>
+
+<!-- PROBE 2: JSON-LD in BODY. Token appears nowhere else in the document. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Structured Data Placement Probe",
+  "identifier": "BODYMARK-ZN9K5T8W",
+  "author": { "@type": "Organization", "name": "Structured Data Placement Probe" }
+}
+</script>
+
+</body>
+</html>
